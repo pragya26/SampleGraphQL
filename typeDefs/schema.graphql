@@ -1,0 +1,17 @@
+type Typeauthor {
+  bookName: String!
+  Author: String!
+  NumberOfBook: Int!
+  email: String!
+}
+
+type Query {
+  helloWorld: String!
+  randomNumberGenerator: Int!
+  queryAuthor: [Typeauthor]!
+  querySingleAuthor(bookName: String!): Typeauthor
+}
+
+type Mutation {
+ addAuthor(bookName:String!, Author:String!, NumberOfBook:Int!, email: String!): Typeauthor!
+}
